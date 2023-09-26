@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Please, enter your rate in " + CURRENCY + " :");
         rate = scanner.nextDouble();
 
+
         FirstCase firstCase = new FirstCase(rate, winValue);
         winValue = firstCase.getData1();
 

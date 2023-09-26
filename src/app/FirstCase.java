@@ -1,7 +1,7 @@
 package app;
 
 
-import java.util.Scanner;
+
 
 class FirstCase {
 
@@ -14,10 +14,9 @@ class FirstCase {
         this.winValue = win;
     }
 
-    public double enterNum() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number you got : ");
-        int num = scanner.nextInt();
+    public double getNum() {
+        double num = (Math.random() * 10) + 1;
+        System.out.println("Winning number is : " + Math.round(num));
         return num;
     }
 

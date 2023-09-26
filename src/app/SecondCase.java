@@ -5,7 +5,7 @@ public class SecondCase extends FirstCase {
 
 
     double tax;
-    int[] nums = {3, 4, 5, 6, 7};
+
 
     public SecondCase(double rate, double win, double tax) {
         super(rate, win);
@@ -13,14 +13,14 @@ public class SecondCase extends FirstCase {
     }
 
     public double getData2() {
-        double winNum = enterNum();
+        double winNum = getNum();
         tax = 5;
-        if (winNum >= nums[0] & winNum <= nums[4]) {
+        if (winNum >= 3 & winNum <= 7) {
             double rateTax = (rate * tax) / 100;
             rate = rate - rateTax;
 
             return (rate * 125) / 100;
-        } else if (winNum > nums[4]) {
+        } else if (winNum > 7) {
             tax = 10;
             rate = rate * 2;
             double winTax = (rate * tax) / 100;
